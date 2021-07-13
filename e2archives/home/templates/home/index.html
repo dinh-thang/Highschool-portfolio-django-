@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">   -->
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index (1).css'%}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+<!--    <link rel="stylesheet" href="index (1).css">-->
+    <title>E2 Archive</title>
+</head>
+<body>
+    <div class="overlay">
+        <div id="sidebar">
+            <div class="container" onclick ="show(); menufunc(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul style="font-family: 'Homemade Apple', cursive; font-size: 2rem;">
+              <li><a style="text-decoration: none" href="./">HOME</a></li>
+              <li><a style="text-decoration: none" href="{% url 'group' %}">GROUP</a></li>
+              <li><a style="text-decoration: none" href="{% url 'member' %}">MEMBERS</a></li>
+              <li><a style="text-decoration: none" href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="header">PARALLAX DEMO</div>
+        <div class="text">Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</div>
+    </div>
+    <div class="overlay_2">
+        <div class="date">28/07/2018</div>
+    </div>
+    <div class="paragraph">
+        <div class="header">PARALLAX DEMO</div>
+        <div class="text">Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</div>
+    </div>
+    <div class="overlay_3">
+        <div class="date">28/07/2018</div>
+    </div>
+    <div class="paragraph">
+        <div class="header">PARALLAX DEMO</div>
+        <div class="text">Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</div>
+    </div>
+    <div class="overlay_4"></div>
+    <script>
+        function show() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+        function menufunc(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+    <div class="description">
+        <h1 style="font-size: 70px;">E2 Archive</h1>
+        <p style="font-size: 30px;">from 2018 to 2021</p>
+    </div>
+</body>
+</html>

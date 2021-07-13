@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--    <link rel="stylesheet" href="group.css">-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/group.css'%}">
+    <title>Group Photos</title>
+</head>
+<body>
+    <nav class="flex-container">
+        <div class="topnav" id="myTopnav">
+            <a href="./" class="active">HOME</a>
+            <a href="{% url 'group' %}" class="">GROUP</a>
+            <a href="{% url 'member' %}" class="">MEMBERS</a>
+            <a href="#about" class="">CONTACT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    <hr>
+    {% for photo in group_photos %}
+        <img src=" {{ photo.image.url }}">
+    {% endfor %}
+</body>
+</html>
